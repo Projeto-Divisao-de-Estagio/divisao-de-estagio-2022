@@ -1,4 +1,4 @@
-### UC01 - Trocar a Senha
+### UC01 - Esqueceu a senha
 ---
 #### Pré-condições
 Ator precisa estar cadastrado no sistema
