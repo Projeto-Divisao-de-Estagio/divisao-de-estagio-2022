@@ -10,8 +10,8 @@ Link com redefinição de senha é enviado para o email
 ---
 #### Fluxo Principal
 1. Na tela de login o "Usuario não logado" seleciona "Esqueceu a senha";
-2. É carregado um sistema onde o "Usuario não logado" informa seu email;
-3. O sistema envia um link para redefinição de senha
+2. É carregado uma tela onde o "Usuario não logado" informa seu email;
+3. O sistema envia um link para redefinição de senha.
 
 ---
 #### Fluxo de Exceção
