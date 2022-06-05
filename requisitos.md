@@ -1,9 +1,9 @@
 # Especificação dos Requisitos do SGDE
 
 ### Diagrama de Casos de Uso
-
-```plantuml
-@startuml diagrama de caso de uso
+<div hidden>
+```
+@startuml diagrama_de_caso_de_uso
 skinparam actorStyle awesome
 left to right direction
 
@@ -59,3 +59,6 @@ Admin --> UC13
 Admin --> UC14
 @enduml
 ```
+</div>
+
+![](diagrama_de_caso_de_uso.svg)
