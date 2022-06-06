@@ -19,22 +19,22 @@ package Acesso_Publico {
 }
 
 package Acesso_Restrito {
-  usecase "Trocar a senha" as UC1
+  usecase "Esqueceu a senha" as UC1
   usecase "Logoff" as UC2 
-  usecase "Requisitar Formulario" as UC3
-  usecase "Acompanhar Requirimento" as UC4
-  usecase "Upload de Termo de Compromisso" as UC5
-  usecase "Submeter Relatorio" as UC6
-  usecase "Avaliar Relatorio Final do Aluno" as UC7
-  usecase "Consultar Acompanhamento de Alunos" as UC8
-  usecase "Consultar Relatorio Final" as UC9
-  usecase "Listar Relatorios Finais" as UC10
+  usecase "Preencher Requerimento" as UC3
+  usecase "Acompanhar Requerimento" as UC4
+  usecase "Envio de Termo de Compromisso" as UC5
+  usecase "Envio de Relatório Final" as UC6
+  usecase "Avaliar Relatório Final do Aluno" as UC7
+  usecase "Listar Alunos Orientados" as UC8
+  usecase "Consultar Relatório Final" as UC9
+  usecase "Listar Relatórios Finais" as UC10
   usecase "Listar Requerimentos" as UC11
   usecase "Consultar Requerimento" as UC12
   usecase "Cadastrar Professor" as UC13
   usecase "Remover Professor" as UC14
-  UC7 .> (Assinar Relatorio) : include
-  UC9 .> (Assinar Relatorio) : include
+  UC7 .> (Assinar Relatório) : include
+  UC9 .> (Assinar Relatório) : include
   UC3 .> (Solicitar Professor) : dependency 
 }
 
