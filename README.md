@@ -1,9 +1,11 @@
 # SGDE
 Sistema de gerenciamento para a Divisão de Estágio da POLI-UPE
 
-# Especificação dos Requisitos do SGDE
-## Requisitos Funcionais
-### Lista de Requisitos Funcionais
+## Diagrama de Casos de Uso
+![DiagramaCasoDeUso](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Projeto-Divisao-de-Estagio/divisao-de-estagio-2022/master/DiagramaCasoDeUso.iuml)
+
+## Especificação dos Requisitos do SGDE
+#### Lista de Requisitos Funcionais
 - RF01 - O sistema requer uma página de login com usuário e senha
 - RF02 - Caso o usuario não seja cadastrado, o sistema deve fornecer uma forma de cadastramento
 - RF03 - O sistema deve ser capaz de enviar um link para o email do usuário para recuperar a sua senha
@@ -22,6 +24,13 @@ Sistema de gerenciamento para a Divisão de Estágio da POLI-UPE
 - RF16 - O sistema deve permitir ao usuario logado, como divisão de estagio, cadastar professor para a orientação de alunos
 - RF17 - O sistema deve permitir ao usuario logado, como divisão de estagio, remover professor da lista de professores orientadores
 
-### Lista de Requisitos Não-Funcionais
-## Diagrama de Casos de Uso
-![DiagramaCasoDeUso](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Projeto-Divisao-de-Estagio/divisao-de-estagio-2022/master/DiagramaCasoDeUso.iuml)
+#### Lista de Requisitos Não-Funcionais
+- RNF01 - O sistema será acessado através de um login e senha cadastrados pelo proprio usuario. O usuário possuirá um login e senha de uso individual e unico.
+- RNF02 - Dados dos usuários devem ser protegidos. Devem ser criptografados e inseridos em um banco de dados seguro.
+- RNF03 - O sistema possuirá três níveis de acesso, sendo eles aluno, professor e divisão de estágio (administrador), com privilégios distintos. O nível de acesso definirá as permissões de cada usuário, sendo divisão de estágio, o usuário com mais privilégios no sistema.
+- RNF04 - O sistema deve tornar o acesso o mais amigavel possivel, para o correto desempenho das tarefas
+- RNF05 - O sistema deve prover comunicação entre as partes envolvidas de forma segura
+- RNF06 - O sistema deve fornecer mecanismos para a realização de assinatura digital e envio de documentos
+
+#### Especificicações de Casos de Uso
+- [UC_01](Req_UC01.md)
