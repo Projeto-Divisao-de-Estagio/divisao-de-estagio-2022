@@ -13,43 +13,47 @@ Logado <|-- Professor
 Logado <|-- Admin
 
 package Acesso_Publico {
-  NLogado --> (Cadastrar)
-  NLogado --> (Login)
-  NLogado --> (Esqueceu a senha)
+  usecase "Cadastrar" as UC1
+  usecase "Login" as UC2
+  usecase "Esqueceu a senha" as UC3
 }
+
+NLogado --> UC1
+NLogado --> UC2
+NLogado --> UC3
 
 package Acesso_Restrito {
-  usecase "Esqueceu a senha" as UC1
-  usecase "Logoff" as UC2 
-  usecase "Preencher Requerimento" as UC3
-  usecase "Acompanhar Requerimento" as UC4
-  usecase "Envio de Termo de Compromisso" as UC5
-  usecase "Envio de Relatório Final" as UC6
-  usecase "Avaliar Relatório Final do Aluno" as UC7
-  usecase "Listar Alunos Orientados" as UC8
-  usecase "Consultar Relatório Final" as UC9
-  usecase "Listar Relatórios Finais" as UC10
-  usecase "Listar Requerimentos" as UC11
-  usecase "Consultar Requerimento" as UC12
-  usecase "Cadastrar Professor" as UC13
-  usecase "Remover Professor" as UC14
-  UC7 .> (Assinar Relatório) : include
-  UC9 .> (Assinar Relatório) : include
-  UC3 .> (Solicitar Professor) : dependency 
+  usecase "Trocar a senha" as UC4
+  usecase "Logoff" as UC5 
+  usecase "Preencher Requerimento" as UC6
+  usecase "Acompanhar Requerimento" as UC7
+  usecase "Envio de Termo de Compromisso" as UC8
+  usecase "Envio de Relatório Final" as UC9
+  usecase "Avaliar Relatório Final do Aluno" as UC10
+  usecase "Listar Alunos Orientados" as UC11
+  usecase "Consultar Relatório Final" as UC12
+  usecase "Listar Relatórios Finais" as UC13
+  usecase "Listar Requerimentos" as UC14
+  usecase "Consultar Requerimento" as UC15
+  usecase "Cadastrar Professor" as UC16
+  usecase "Remover Professor" as UC17
+  UC10 .> (Assinar Relatório) : include
+  UC12 .> (Assinar Relatório) : include
+  UC6 .> (Solicitar Professor) : dependency 
 }
 
-Logado --> UC1
-Logado --> UC2
-Aluno --> UC3
-Aluno --> UC4
-Aluno --> UC5
-Aluno --> UC6 
-Professor --> UC7
-Professor --> UC8
-Admin --> UC9
-Admin --> UC10
-Admin --> UC11
+Logado --> UC4
+Logado --> UC5
+Aluno --> UC6
+Aluno --> UC7
+Aluno --> UC8
+Aluno --> UC9 
+Professor --> UC10
+Professor --> UC11
 Admin --> UC12
 Admin --> UC13
 Admin --> UC14
+Admin --> UC15
+Admin --> UC16
+Admin --> UC17
 @enduml
