@@ -34,3 +34,7 @@ Sistema de gerenciamento para a Divisão de Estágio da POLI-UPE
 
 #### Especificicações de Casos de Uso
 - [UC_01](Req_UC01.md)
+- [UC_02](Req_UC02.md)
+- [UC_03](Req_UC03.md)
+- [UC_04](Req_UC04.md)
+- [UC_05](Req_UC05.md)
