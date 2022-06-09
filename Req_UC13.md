@@ -9,7 +9,7 @@ O sistema apresenta uma tela com uma lista de todos os relatórios finais.
 
 ---
 #### Fluxo Principal
-1. Na tela principal após login, o "Usuario Logado" como "ADM Divisao" seleciona "Listar Relatórios Finais";
+1. Na tela principal após login, o usuário seleciona "Listar Relatórios Finais";
 2. O sistema então seleciona todos os relatórios finais submetidos pelos alunos; 
 3. O sistema apresenta na tela uma lista com todos os relatórios finais relacionados;
 
