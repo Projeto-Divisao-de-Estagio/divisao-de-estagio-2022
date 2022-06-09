@@ -9,9 +9,9 @@ O sistema apresenta uma tela com uma lista de alunos que estão sendo orientados
 
 ---
 #### Fluxo Principal
-1. Na tela principal após login, o "Usuario Logado" como "Professor Orientador" seleciona "Listar Alunos Orientados";
-2. O sistema então seleciona todos os usuários registrados como "Aluno" e que estão sendo orientados pelo "Professor Orientador"; 
-3. O sistema apresenta na tela uma lista com todos os usuários relacionados;
+1. Na tela principal após login, o usuário seleciona "Listar Alunos Orientados";
+2. O sistema então seleciona todos os usuários registrados como "Aluno" e que estão sendo orientados pelo professor orientador; 
+3. O sistema apresenta na tela uma lista com todos os alunos relacionados;
 
 ---
 #### Fluxo de Exceção
