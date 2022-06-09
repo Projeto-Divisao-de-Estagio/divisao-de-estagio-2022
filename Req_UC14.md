@@ -11,7 +11,7 @@ O sistema apresenta uma tela com uma lista de todos os requerimentos submetidos.
 #### Fluxo Principal
 1. Na tela principal após login, o "Usuario Logado" como "ADM Divisao" seleciona "Listar Requerimentos";
 2. O sistema então seleciona todos os requerimentos submetidos pelos alunos; 
-3. O sistema apresenta na tela uma lista com todos os requerimentos relacionados;
+3. O sistema apresenta na tela uma lista com todos os requerimentos relacionados, podendo ser acessados individualmente;
 
 ---
 #### Fluxo de Exceção
