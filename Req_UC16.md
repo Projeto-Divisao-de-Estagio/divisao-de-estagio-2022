@@ -10,7 +10,7 @@ O "Novo professor" é efetivamente registrado como "Professor Orientador" no sis
 ---
 #### Fluxo Principal
 1. Na tela principal após login, o "Usuario Logado" como "ADM Divisao" seleciona "Cadastrar professor orientador";
-2. O sistema abrirá um espaço com campos para adicionar as informações do novo usuário "Professor Orientador" que será cadastrado;
+2. O sistema abre um espaço com campos para adicionar as informações do novo usuário "Professor Orientador" que será cadastrado;
 3. O sistema checa se o novo usuário já não existe no sistema e se as informações respeitam todas as validações;
 4. O sistema cadastra o novo "Professor Orientador";
 5. O sistema exibe uma mensagem de "Cadastro feito com sucesso";
