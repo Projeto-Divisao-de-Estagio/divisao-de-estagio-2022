@@ -38,3 +38,4 @@ Sistema de gerenciamento para a Divisão de Estágio da POLI-UPE
 - [UC_03](Req_UC03.md)
 - [UC_04](Req_UC04.md)
 - [UC_05](Req_UC05.md)
+- [UC_11](Req_UC11.md)
