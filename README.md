@@ -38,6 +38,11 @@ Sistema de gerenciamento para a Divisão de Estágio da POLI-UPE
 - [UC_03](Req_UC03.md)
 - [UC_04](Req_UC04.md)
 - [UC_05](Req_UC05.md)
+- [UC_06](Req_UC06.md)
+- [UC_07](Req_UC07.md)
+- [UC_08](Req_UC08.md)
+- [UC_09](Req_UC09.md)
+- [UC_10](Req_UC10.md)
 - [UC_11](Req_UC11.md)
 - [UC_12](Req_UC12.md)
 - [UC_13](Req_UC13.md)
@@ -45,3 +50,6 @@ Sistema de gerenciamento para a Divisão de Estágio da POLI-UPE
 - [UC_15](Req_UC15.md)
 - [UC_16](Req_UC16.md)
 - [UC_17](Req_UC17.md)
+
+#### Protótipo
+https://www.figma.com/file/Rw43OyrTETx5RaEif0s8a4/Projeto-da-Divis%C3%A3o-de-Est%C3%A1gio?node-id=0%3A1
