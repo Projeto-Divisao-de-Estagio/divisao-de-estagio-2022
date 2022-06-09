@@ -11,7 +11,7 @@ O sistema apresenta uma tela com uma lista de todos os relatórios finais.
 #### Fluxo Principal
 1. Na tela principal após login, o usuário seleciona "Listar Relatórios Finais";
 2. O sistema então seleciona todos os relatórios finais submetidos pelos alunos; 
-3. O sistema apresenta na tela uma lista com todos os relatórios finais relacionados;
+3. O sistema apresenta na tela uma lista com todos os relatórios finais relacionados, podendo ser acessados individualmente a partir dessa lista;
 
 ---
 #### Fluxo de Exceção
