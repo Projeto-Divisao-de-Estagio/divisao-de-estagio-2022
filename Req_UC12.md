@@ -10,7 +10,7 @@ Retorna o relatório requisitado pelo usuário, e após análise do mesmo, atual
 ---
 #### Fluxo Principal
 1. Na tela principal após o login, o administrador seleciona "Consultar Relatório Final";
-2. O sistema carrega uma tela com o campo "ID" a ser preenchido somente por números e o botão "Consultar"; 
+2. O sistema carrega uma tela com um campo "ID" a ser preenchido somente por números, e um botão "Consultar"; 
 3. O usuário escreve o número de identificação do relatório no campo "ID"; 
 4. O usuário após preencher o campo "ID", clica no botão "Consultar";
 5. O sistema faz uma busca pelo identificador digitado na listagem de relatórios finais em seu repositório;
@@ -24,7 +24,7 @@ Retorna o relatório requisitado pelo usuário, e após análise do mesmo, atual
 ---
 #### Fluxos Alternativos
 1. Na tela principal após o login, o administrador seleciona "Consultar Relatório Final";
-2. O sistema carrega uma tela com o campo "ID" a ser preenchido somente por números, e o botão "Consultar"; 
+2. O sistema carrega uma tela com um campo "ID" a ser preenchido somente por números, e um botão "Consultar"; 
 3. O usuário escreve o número de identificação do relatório no campo "ID"; 
 4. O usuário após preencher o campo "ID", clica no botão "Consultar";
 5. O sistema faz uma busca pelo identificador digitado na listagem de relatórios finais em seu repositório;
