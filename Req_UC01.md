@@ -1,23 +1,26 @@
-### UC01 - Cadastrar
----
-#### Pré-condições
-"Usuario Não Logado" não tem registro prévio no sistema
+```mermaid
+sequenceDiagram
+    actor UsuarioNaoLogado as "Usuário Não Logado"
+    participant Sistema
 
----
-#### Pós-condição
-"Usuario não logado" é efetivamente registrado como "Aluno" no sistema. 
+    UsuarioNaoLogado->>Sistema: Acessa tela de login
+    UsuarioNaoLogado->>Sistema: Informa credenciais (usuário e senha)
+    UsuarioNaoLogado->>Sistema: Clica em "Login"
+    Sistema->>Sistema: Verifica credenciais
 
----
-#### Fluxo Principal
-1. Na tela de principal o "Usuario não logado" seleciona "Cadastrar";
-2. É carregado uma tela onde o "Usuario não logado" informa seus dados;
-3. O sistema checa se o email informado é válido e se a senha atende todos os requerimentos;
-4. Sistema envia um email de confirmação de cadastro para o email informado pelo "Usuario Não Logado";
-5. O sistema retorna uma mensagem de "Cadastro feito com sucesso".
+    alt Credenciais válidas
+        Sistema-->>UsuarioNaoLogado: Acesso concedido
+        Sistema-->>UsuarioNaoLogado: Redireciona para área do usuário
+    else Credenciais inválidas
+        Sistema-->>UsuarioNaoLogado: Exibe "Usuário ou senha incorretos"
+    end
 
----
-#### Fluxo de Exceção
-1. E1 - Email já cadastrado
-2. E1.1 - Caso o email já esteja presente no banco de dados, o sistema informa "Este email já está em uso" e o "Usuario Não Logado" continua no passo 2 do Fluxo Principal.
-3. E2 - Senha Curta
-4. E2.1 - Caso a senha informada pelo "Usuario Não Logado" seja menor que o limite mínimo imposto pelo sistema, retornar a mensagem "Sua senha deve ter no minimo 8 caracteres" e o "Usuario Não Logado" continua no passo 2 do Fluxo Principal.
+    alt Esqueci minha senha
+        UsuarioNaoLogado->>Sistema: Clica em "Esqueci minha senha"
+        Sistema-->>UsuarioNaoLogado: Redireciona para UC.3 - Recuperar Senha
+    end
+
+    alt Link inválido ou senha nova inválida
+        Sistema-->>UsuarioNaoLogado: Exibe mensagem de erro e solicita nova tentativa
+    end
+```
