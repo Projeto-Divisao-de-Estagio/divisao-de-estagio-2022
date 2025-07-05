@@ -1,26 +1,35 @@
-```mermaid
-sequenceDiagram
-    actor UsuarioNaoLogado as "Usuário Não Logado"
-    participant Sistema
+### UC01 - Logar
+---
+#### Pré-condições  
+"Usuário não logado" possui um cadastro existente e credenciais válidas.
 
-    UsuarioNaoLogado->>Sistema: Acessa tela de login
-    UsuarioNaoLogado->>Sistema: Informa credenciais (usuário e senha)
-    UsuarioNaoLogado->>Sistema: Clica em "Login"
-    Sistema->>Sistema: Verifica credenciais
+---
+#### Pós-condição  
+"Usuário não logado" é autenticado e tem acesso ao sistema.
 
-    alt Credenciais válidas
-        Sistema-->>UsuarioNaoLogado: Acesso concedido
-        Sistema-->>UsuarioNaoLogado: Redireciona para área do usuário
-    else Credenciais inválidas
-        Sistema-->>UsuarioNaoLogado: Exibe "Usuário ou senha incorretos"
-    end
+---
+#### Fluxo Principal  
+1. O "Usuário não logado" acessa a tela de login;  
+2. O "Usuário não logado" informa suas credenciais (usuário e senha);  
+3. O "Usuário não logado" clica no botão “Login”;  
+4. O sistema verifica se as credenciais são válidas;  
+5. O sistema autentica o usuário e concede acesso ao sistema;  
+6. O sistema redireciona o usuário para a tela inicial do sistema.  
 
-    alt Esqueci minha senha
-        UsuarioNaoLogado->>Sistema: Clica em "Esqueci minha senha"
-        Sistema-->>UsuarioNaoLogado: Redireciona para UC.3 - Recuperar Senha
-    end
+---
+#### Fluxo de Exceção  
+1. **E1 – Credenciais inválidas**  
+   - Se as credenciais fornecidas forem inválidas ou inexistentes, o sistema exibe a mensagem "Usuário ou senha incorretos" e o "Usuário não logado" retorna ao passo 2 do Fluxo Principal.  
 
-    alt Link inválido ou senha nova inválida
-        Sistema-->>UsuarioNaoLogado: Exibe mensagem de erro e solicita nova tentativa
-    end
-```
+2. **E2 – Esqueci minha senha**  
+   - O "Usuário não logado" clica em “Esqueci minha senha”;  
+   - O sistema redireciona para o caso de uso UC.3 – Recuperar Senha;  
+   - Após a conclusão do UC.3, o fluxo retorna ao passo 1 do Fluxo Principal.  
+
+3. **E3 – Link de redefinição inválido ou expirado**  
+   - O sistema exibe mensagem de erro e oferece opção de reiniciar o processo de recuperação.  
+
+4. **E4 – Nova senha inválida**  
+   - O sistema exibe os critérios de segurança exigidos e solicita nova tentativa.  
+
+---
